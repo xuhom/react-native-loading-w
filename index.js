@@ -21,7 +21,7 @@ Method:
  */
 'use strict';
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 import {
     StyleSheet,
@@ -31,6 +31,7 @@ import {
     View,
     TouchableOpacity
 } from 'react-native';
+import propTypes from 'prop-types';
 
 import CircleProgress from './CircleProgress'
 
@@ -47,13 +48,13 @@ class Loading extends React.Component {
         timeout: 0,
     };
     static propTypes = {
-        text: PropTypes.string,
-        textStyle: PropTypes.any,
-        pointerEvents: PropTypes.bool,
-        bottomStyle: PropTypes.any,
-        loadingStyle: PropTypes.any,
-        timeout: PropTypes.number,
-        onLoadingTimeout: PropTypes.func,
+        text: propTypes.string,
+        textStyle: propTypes.any,
+        pointerEvents: propTypes.bool,
+        bottomStyle: propTypes.any,
+        loadingStyle: propTypes.any,
+        timeout: propTypes.number,
+        onLoadingTimeout: propTypes.func,
     };
 
     constructor(props) {
