@@ -1,6 +1,6 @@
 {
   "name": "react-native-loading-w",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "```javascript npm install react-native-loading-w --save",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,10 @@
     "email": "wenxucheng@163.com"
   },
   "license": "ISC",
+  "peerDependencies": {
+    "react-native": ">=0.45.0",
+    "prop-types": "^15.6.1"
+  },
   "bugs": {
     "url": "https://github.com/wenxucheng/react-native-loading-w/issues"
   },
